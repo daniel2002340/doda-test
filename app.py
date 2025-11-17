@@ -17,5 +17,5 @@ def predict():
    description: A personal greeting
  """
  json = request.get_json()
- return "Hello {}!".format(str(json["name"]))
+ return "Hello you {}!".format(str(json["name"]))
 app.run(host="0.0.0.0", port=8080, debug=True)
